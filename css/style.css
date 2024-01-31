@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+#note-box {
+    width: calc(25% - 50px);
+    height: 200px;
+    background-color: white;
+    margin: 25px;
+}
+
+.note-tools {
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.note-tools i {
+    color: white;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    resize: none;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.addNote {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
